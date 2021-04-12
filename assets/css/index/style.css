@@ -27,7 +27,7 @@ body {
     -khtml-border-radius: 16px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: red solid 1px;
+    border: gray solid 1px;
 }
 .buttons {
     min-width: 300px;
@@ -69,7 +69,7 @@ a.link {
     width: 10em;
     height: 10em;
     border-radius: 5.6em;
-    border: blue solid 2px;
+    border: gray solid 2px;
 }
 
 .pizdec {
