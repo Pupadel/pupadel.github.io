@@ -61,7 +61,7 @@ a.link {
     width: 10em;
     height: 10em;
     border-radius: 5.6em;
-    border: red solid 2px;
+    border: gray solid 2px;
 }
 
 .pizdec {
@@ -73,7 +73,7 @@ a.link {
 a.link:hover,
 button:hover {
     background: #fff6;
-    color: blue;
+    color: gray;
 }
 
 button:active, button:focus {
