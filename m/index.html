@@ -70,7 +70,7 @@
                 <div class="avatar-container"><img src="../assets/images/ava.jpg" oncontextmenu="return false;" class="avatar"></div>
                 <h2><span id="name"></span></h2>
                 <hr width="295">
-                <!--<h3><span class="typed"></span><span class="typed-cursor"></span></h3>-->
+                <h3><span class="typed"></span><span class="typed-cursor"></span></h3>
             </div>
             <div class="center pizdec"><h2>Кнопотьки</h2></div>
             <div class="social linkMenu d-flex justify-content-center">
@@ -122,13 +122,13 @@
         </header>
     </body>
     <script>
-        $("#name").text(getComputedStyle(document.body).getPropertyValue('--name'))
+       <!-- $("#name").text(getComputedStyle(document.body).getPropertyValue('--name'))
         $("#description").text(getComputedStyle(document.body).getPropertyValue('--description'))
         // ОНО НЕ РАБОТАЕТ СПАСИБО ЖС СПАСИБО ИДИ НАХУЙ
         console.log('Пасхалка не работает идите нахуй')
         if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
             if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
             window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
-        }
+        }-->
     </script>
 </html>
