@@ -23,7 +23,7 @@ $(function () {
 $(function () { 
     $(".typed").typed({ 
         strings: ["⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣ЖРАТЬ", "ЭТО", "ТАЛАНТ", "Kto eto?", "МазэХакер", "Любитель музяки", "Любитель⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣ пожрать :))"], 
-        typeSpeed: 10, 
+        typeSpeed: 3, 
         loop: true, 
         cursorChar: "|", 
     }); 
