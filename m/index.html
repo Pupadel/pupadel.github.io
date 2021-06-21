@@ -97,9 +97,38 @@
             <div class="social linkMenu d-flex justify-content-center">
                 <a class="mx-2 social-icon" data-tooltip="Донат" href="#" data-toggle="modal" data-target="#donut">
                     <span class="mdi mdi-coin-outline"></span>
-                </a>
-                <a href="javascript://" onclick="location.href='https://pupadel.ml'" class="mx-2 social-icon" data-tooltip="Включить музяку">
-                    <span class="mdi mdi-music-circle"></span>
+            <audio id="1">
+                <source src="../assets/sounds/golosovanie.mp3" type="audio/mp3">
+            </audio>
+            <script>
+                var f = true, t = true, k = true;
+                function change(param) {
+                    var ans = param;
+                    if (param == false) { ans = true; }
+                    else if (param == true) { ans = false; }
+                    return ans;
+                }
+                function play(param, id) {
+                    var p = param;
+                    if (param == false) { p = true; }
+                    else if (param == true) { p = false; }
+                    if (id == "1") {
+                        if (p) {
+                            document.getElementById('2').pause();
+                            document.getElementById('3').pause();
+                            document.getElementById('1').play();
+                        }
+                        if (!p) {
+                            document.getElementById('1').pause();
+                            document.getElementById('2').pause();
+                            document.getElementById('3').pause();
+                        }
+                    }
+                }
+            </script>
+            <div class="social linkMenu d-flex justify-content-center">
+                <a href="javascript://" onclick="play(f, '1'); f = change(f);" class="mx-2 social-icon" data-tooltip="Включить музяку">
+                    <span class="mdi mdi-music"></span>
                 </a>
                 <a href="javascript://" onclick="location.href='https://github.com/Pupadel/ftg-pupadel-modules'" class="mx-2 social-icon" data-tooltip="Говнокодули">
                     <span class="mdi mdi-folder-plus-outline"></span>
