@@ -1,5 +1,5 @@
 //хуйня сверху анимированная
-$(function () { 
+//$(function () { 
     var title = document.title, 
         animSeq = ["|"], 
         animIndex = 0, 
@@ -22,7 +22,7 @@ $(function () {
 //Дескрипшен анимированный
 $(function () { 
     $(".typed").typed({ 
-        strings: ["⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣ЖРАТЬ ЭТО ТАЛАНТ", "Kto eto?", "МазэХакер", "Любитель музяки", "Любитель⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣ пожрать :))"], 
+        strings: ["⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣another other string", "Kto eto?", "МазэХакер", "Любитель музяки", "Любитель⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣ покушать :))"], 
         typeSpeed: 8, 
         loop: true, 
         cursorChar: "|", 
