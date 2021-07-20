@@ -12,9 +12,13 @@
         <link rel="stylesheet" href="assets/fonts/gsans/style.css">
         <link rel="stylesheet" href="assets/vars.css">
         <link rel="stylesheet" href="assets/css/index/style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="assets/js/text.js"></script>
-        <script src="assets/js/typed.min.js"></script>
+        <link rel="stylesheet" href="assets/cursor/cur.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+        <script src="assets/js/magic.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
         <meta name="theme-color" content="#191919">
         
 </head>
@@ -73,13 +77,14 @@
             <script>
                 document.currentScript.parentElement.volume = 0.50;
             </script>
+            <script src="assets/cursor/cur.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
         </audio>
         <header class="center info">
             <div class="center pizdec">
                 <div class="avatar-container"><img src="assets/images/ava.jpg" oncontextmenu="return false;" class="avatar"></div>
-                <h2><span id="name">Pupadel</span></h2>
+                <h2><span id="name">𝙿𝚞𝚙𝚊𝚍𝚎𝚕</span></h2>
                 <hr width="295">
-                <h3><span class="typed"></span><span class="typed-cursor"> </span></h3>
+                <h3><span id="description"></span></h3>
                 <hr width="295">
                 <h2>Кнопотьки</h2>
             </div>
@@ -95,25 +100,24 @@
             <div class="buttons">
                 <a href="javascript://" class="link" onclick="document.getElementById('donate').style.display='block'">Donate</a>
             </div>
-                        <hr width="295">
+                    <hr width="295">
             <div class="center pizdec">
                 <h2>Ещё кнопотьки :з</h2>
             </div>
-            <div class="buttons">
-                <a href="javascript://" class="link" onclick="location.href='https://github.com/Pupadel/ftg-pupadel-modules'">Modules</a>
-            </div>
-            <div class="buttons">
-                <a href="javascript://" class="link" onclick="location.href='https://pupadel.ml'">Turn on the music</a>
-        </header>
-    </body>
-    <script>
-        $("#name").text(getComputedStyle(document.body).getPropertyValue('--name'))
-        $("#description").text(getComputedStyle(document.body).getPropertyValue('--description'))
-        // ОНО НЕ РАБОТАЕТ СПАСИБО ЖС СПАСИБО ИДИ НАХУЙ
-        console.log('Пасхалка не работает идите нахуй')
-        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
-            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
-            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
-        }
+        <div class="buttons">
+            <a href="javascript://" class="link" onclick="location.href='https://github.com/Pupadel/ftg-pupadel-modules'">Modules</a>
+        </div>
+        <div class="buttons">
+            <a href="javascript://" class="link" onclick="location.href='https://pupadel.ml'">Turn on the music</a>
+</header>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2b99a0c4f60c80abff1763e0-|49" defer=""></script></body>
+<script type="2b99a0c4f60c80abff1763e0-text/javascript">
+        new Typed('#description', {
+            strings: ["Kto eto?", "МазэХакер", "Любитель музяки", "Любитель⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣ пожрать :))"],
+            typeSpeed: 50,
+            cursorChar: '█',
+            fadeOut: true,
+            loop: true
+        })
     </script>
 </html>
