@@ -12,128 +12,97 @@
         <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
         <link rel="stylesheet" href="../assets/css/m/bootstrap.css">
         <link rel="stylesheet" href="../assets/css/m/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="../assets/js/text.js"></script>
-    <script src="../assets/js/typed.min.js"></script>
+    <script src="../assets/js/magic.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
     <link rel="stylesheet" href="../assets/vars.css">
+    <link rel="stylesheet" href="../assets/cursor/cur.css">
     <meta name="theme-color" content="#191919">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
-    <script>
-        var test = false
-        if (!test) {
-            function isMacintosh() {
-                return navigator.platform.indexOf('Mac') > -1
-            }
-
-            function isWindows() {
-                return navigator.platform.indexOf('Win') > -1
-            }
-
-            if(isMacintosh()|| isWindows()) {
-                window.location.replace("../")
-            }
-        }
-    </script>
-    <div id="page-preloader">
-        <span class="spin mdi mdi-loading mdi-spin"></span>
-        <script type="text/javascript">
-            $(window).on('load', function () {
-                var $preloader = $('#page-preloader'),
-                $spinner   = $preloader.find('.spin');
-                $spinner.delay(100).fadeOut('slow');
-                $preloader.delay(450).fadeOut('slow');
-            });
-            function is_shit() {
-                if (/MSIE/i.test(navigator.userAgent)) return true
-                if (/firefox/i.test(navigator.userAgent)) return true
-                if (/Trident/i.test(navigator.userAgent)) return true
-                if (/Edge/i.test(navigator.userAgent)) return true
-                return false
-            }
-            if (is_shit()) {
-                document.body.style.backgroundImage = "url('../assets/anims/aye.gif')";
-            }
+<div id="page-preloader">
+<span class="spin mdi mdi-loading mdi-spin"></span>
+<script src="../assets/js/preloader.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+</div>
+<body class="center blur">
+    <script src="../assets/cursor/cur.js" type="2b99a0c4f60c80abff1763e0-text/javascript"></script>
+    <audio autoplay loop id="player">
+        <source src="../assets/sounds/alien.mp3">
+        <script>
+            document.currentScript.parentElement.volume = 0.50;
         </script>
-    </div>
-    <body class="center blur">
-        <audio autoplay loop id="player">
-            <source src="../assets/sounds/golosovanie.mp3">
-            <script>
-                document.currentScript.parentElement.volume = 0.50;
-            </script>
-        </audio>
-        <header class="center info">
-            <div class="center pizdec">
-                <div class="avatar-container"><img src="../assets/images/ava.jpg" oncontextmenu="return false;" class="avatar"></div>
-                <h2><span id="name"></span></h2>
-                <hr width="295">
-                <h3><span class="typed"></span><span class="typed-cursor"></span></h3>
-            </div>
-            <div class="center pizdec"><h2>Кнопотьки</h2></div>
-            <div class="social linkMenu d-flex justify-content-center">
-                <a href="javascript://" onclick="location.href='https://telegram.im/pupadel_gg'" class="mx-2 social-icon" data-tooltip="Telegram">
-                    <span class="mdi mdi-telegram"></span>
-                </a>
-                <a href="javascript://" onclick="location.href='https://vk.com/pupadel_gg'" class="mx-2 social-icon" data-tooltip="VK">
-                    <span class="mdi mdi-vk"></span>
-                </a>
-                <a href="javascript://" onclick="location.href='https://twitter.com/pupadel?s=09'" class="mx-2 social-icon" data-tooltip="Twitter">
-                    <span class="mdi mdi-twitter"></span>
-                </a>
-                <a href="javascript://" onclick="location.href='http://github.com/Pupadel'" class="mx-2 social-icon" data-tooltip="GitHub">
-                    <span class="mdi mdi-github-circle"></span>
-                </a>
-
-                <a href="javascript://" onclick="location.href='https://discord.com/channels/oHuMeIIIHuK#4806'" class="mx-2 social-icon" data-tooltip="Discord">
-                    <span class="mdi mdi-discord"></span>
-                </a>
-            </div>
-            <div class="center pizdec">
-            	<h2> Ещё кнопотьки :з</h2>
-            </div>
-            <div class="social linkMenu d-flex justify-content-center">
-                <a class="mx-2 social-icon" data-tooltip="Донат" href="#" data-toggle="modal" data-target="#donut">
-                    <span class="mdi mdi-coin-outline"></span>
-                </a>
-                <a href="javascript://" onclick="location.href='https://pupadel.ml'" class="mx-2 social-icon" data-tooltip="Включить музяку">
-                    <span class="mdi mdi-music-circle"></span>
-                </a>
-                <a href="javascript://" onclick="location.href='https://pupadel.ml/rick.mp4'" class="mx-2 social-icon" data-tooltip="Одноклассники??">
-                    <span class="mdi mdi-odnoklassniki"></span>
-                </a>
-                <a href="javascript://" onclick="location.href='https://github.com/Pupadel/ftg-pupadel-modules'" class="mx-2 social-icon" data-tooltip="Говнокодули">
-                    <span class="mdi mdi-folder-plus-outline"></span>
-                </a>
-            </div>
-            <div class="modal fade" id="donut" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title gsmedium" id="ModalLabel">Обанкротиться</h2>
-                            <a class="close" data-dismiss="modal" aria-label="Close"><span class="black clickable mdi mdi-24px mdi-close"></span></a>
-                        </div>
-                        <div class="modal-body black">
-                            <a href="javascript://" onclick="location.href='https://qiwi.com/n/VENNE631'" class="btn btn-donut pl-3 mb-3 mx-1">
-                                <span class="mdi mdi-coin"></span>
-                                <span class="mx-2">Отправить денежку на QIWI кошелёк :з</span>
-                            </a>
-                        </div>
+    </audio>
+    <header class="center info">
+        <div class="center pizdec">
+            <div class="avatar-container"><img src="../assets/images/ava.jpg" oncontextmenu="return false;" class="avatar"></div>
+            <h2>𝙿𝚞𝚙𝚊𝚍𝚎𝚕</h2>
+            <h3><span id="description"></span></h3>
+            <hr width="295">
+        </div>
+        <div class="center pizdec"><h2>Кнопотьки</h2></div>
+        <div class="social linkMenu d-flex justify-content-center">
+            <a href="javascript://" onclick="location.href='https://telegram.im/pupadel_gg'" class="mx-2 social-icon" data-tooltip="Telegram">
+                <span class="mdi mdi-telegram"></span>
+            </a>
+            <a href="javascript://" onclick="location.href='https://vk.com/pupadel_gg'" class="mx-2 social-icon" data-tooltip="VK">
+                <span class="mdi mdi-vk"></span>
+            </a>
+            <a href="javascript://" onclick="location.href='https://twitter.com/pupadel?s=09'" class="mx-2 social-icon" data-tooltip="Twitter">
+                <span class="mdi mdi-twitter"></span>
+            </a>
+            <a href="javascript://" onclick="location.href='http://github.com/Pupadel'" class="mx-2 social-icon" data-tooltip="GitHub">
+                <span class="mdi mdi-github-circle"></span>
+            </a>
+            <a href="javascript://" onclick="location.href='https://discord.com/channels/oHuMeIIIHuK#4806'" class="mx-2 social-icon" data-tooltip="Discord">
+                <span class="mdi mdi-discord"></span>
+            </a>
+        </div>
+        <div class="center pizdec">
+        	<h2> Ещё кнопотьки :з</h2>
+        </div>
+        <div class="social linkMenu d-flex justify-content-center">
+            <a class="mx-2 social-icon" data-tooltip="Донат" href="#" data-toggle="modal" data-target="#donut">
+                <span class="mdi mdi-coin-outline"></span>
+            </a>
+            <a href="javascript://" onclick="location.href='https://pupadel.ml'" class="mx-2 social-icon" data-tooltip="Включить музяку">
+                <span class="mdi mdi-music-circle"></span>
+            </a>
+            <a href="javascript://" onclick="location.href='https://pupadel.ml/rick.mp4'" class="mx-2 social-icon" data-tooltip="Одноклассники??">
+                <span class="mdi mdi-odnoklassniki"></span>
+            </a>
+            <a href="javascript://" onclick="location.href='https://github.com/Pupadel/ftg-pupadel-modules'" class="mx-2 social-icon" data-tooltip="Говнокодули">
+                <span class="mdi mdi-folder-plus-outline"></span>
+            </a>
+        </div>
+        <div class="modal fade" id="donut" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title gsmedium" id="ModalLabel">Обанкротиться</h2>
+                        <a class="close" data-dismiss="modal" aria-label="Close"><span class="black clickable mdi mdi-24px mdi-close"></span></a>
+                    </div>
+                    <div class="modal-body black">
+                        <a href="javascript://" onclick="location.href='https://qiwi.com/n/VENNE631'" class="btn btn-donut pl-3 mb-3 mx-1">
+                            <span class="mdi mdi-coin"></span>
+                            <span class="mx-2">Отправить денежку на QIWI кошелёк :з</span>
+                        </a>
                     </div>
                 </div>
             </div>
-        </header>
-    </body>
-    <script>
-        $("#name").text(getComputedStyle(document.body).getPropertyValue('--name'))
-        $("#description").text(getComputedStyle(document.body).getPropertyValue('--description'))
-        // ОНО НЕ РАБОТАЕТ СПАСИБО ЖС СПАСИБО ИДИ НАХУЙ
-        console.log('Пасхалка не работает идите нахуй')
-        if (getComputedStyle(document.body).getPropertyValue('--has-pasxalka-work') == "true") {
-            if(window.devtools.isOpen) { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); }
-            window.addEventListener('devtoolschange', event => { window.location.href = getComputedStyle(document.body).getPropertyValue('--pasxalka'); });
-        }
+        </div>
+    </div>
+</header>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="2b99a0c4f60c80abff1763e0-|49" defer=""></script></body>
+<script type="2b99a0c4f60c80abff1763e0-text/javascript">
+        new Typed('#description', {
+            strings: ['Yeah, I\'m SIMP', 'Hmm...', 'Who am I?', '...'],
+            typeSpeed: 50,
+            cursorChar: '_',
+            fadeOut: true,
+            loop: true
+        })
     </script>
 </html>

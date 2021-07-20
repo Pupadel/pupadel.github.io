@@ -3,7 +3,7 @@ body {
     width: 100%;
     min-height: 100%;
     margin: 0;
-    background: var(--back-gif) center;
+    background-image: url(../../anims/aye.gif);
     background-size: cover;
     display: flex;
     font-family: 'Product Sans';
@@ -25,9 +25,9 @@ body {
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -khtml-border-radius: 16px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: orange solid 1px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: #e0f72f solid 1px;
 }
 .buttons {
     min-width: 300px;
@@ -69,7 +69,7 @@ a.link {
     width: 10em;
     height: 10em;
     border-radius: 5.6em;
-    border: orange solid 2px;
+    border: #e0f72f solid 2px;
 }
 
 .pizdec {
@@ -81,7 +81,7 @@ a.link {
 a.link:hover,
 button:hover {
     background: #fff6;
-    color: red;
+    color: #e0f72f;
 }
 
 button:active, button:focus {

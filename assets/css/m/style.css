@@ -1,17 +1,23 @@
-/* mobile index page styles */
 body {
     width: 100%;
     min-height: 100%;
     margin: 0;
-    background: var(--back-gif) center;
+    background-image: url(../../anims/aye.gif);
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     display: flex;
-    font-family: 'Product Sans';
-    font: 'Product Sans';
+    font-family: 'Open Sans', sans-serif;
+    font: 'Open Sans';
+    user-select: none;
+}
+img {
+    pointer-events: none;
 }
 .blur {
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
 }
 .center {
     justify-content: center;
@@ -61,7 +67,7 @@ a.link {
     width: 10em;
     height: 10em;
     border-radius: 5.6em;
-    border: orange solid 2px;
+    border: #e0f72f solid 2px;
 }
 
 .pizdec {
@@ -73,7 +79,7 @@ a.link {
 a.link:hover,
 button:hover {
     background: #fff6;
-    color: orange;
+    color: #e0f72f;
 }
 
 button:active, button:focus {
@@ -134,14 +140,19 @@ a.nolink {
     line-height: 2.5rem;
     color: #212121;
     font-size: 20px;
+    transition: 0.3s;
 }
 
 .social a:hover {
-    color: #dc3545;
+    color: #e0f72f;
+    box-shadow: 0 0 20px #e0f72f;
+    transition: 0.3s;
 }
 
 .social a:active {
-    color: #fff;
+    color: rgb(224, 247, 47);
+    box-shadow: 0 0 30px rgb(224, 247, 47);
+    transition: 0.3s;
 }
 
 .social span {
@@ -190,9 +201,10 @@ a.nolink {
 .clickable {
     cursor: pointer;
 }
+
 a.btn-donut {
     color: #fff;
-    background-color: rgb(88, 21, 119);
+    background-color: rgb(28, 101, 19);
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     line-height: 1.5;
@@ -203,6 +215,6 @@ a.btn-donut {
 }
 
 a.btn-donut:hover {
-    color: #EC407A;
+    color: #e0f72f;
     text-decoration: none;
 }
