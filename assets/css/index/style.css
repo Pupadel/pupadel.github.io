@@ -6,8 +6,8 @@ body {
     background-image: url(../../anims/aye.gif);
     background-size: cover;
     display: flex;
-    font-family: 'Product Sans';
-    font: 'Product Sans';
+    font-family: 'Open Sans';
+    font: 'Open Sans';
 }
 .center {
     justify-content: center;
